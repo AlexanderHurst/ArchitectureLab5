@@ -23,4 +23,9 @@ class Customer extends Observer {
     public void unregister(Store store) {
         store.unregister(this);
     }
+
+    @Override
+    public String toString() {
+        return this.name;
+    }
 }
